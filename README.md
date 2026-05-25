@@ -83,6 +83,10 @@ ANTHROPIC_API_KEY=sk-ant-...
 # Ollama (로컬 모델)
 LLM_PROVIDER=ollama
 OLLAMA_MODEL=llama3.2
+
+# Google Gemini
+LLM_PROVIDER=gemini
+GEMINI_API_KEY=your-gemini-api-key
 ```
 
 ---

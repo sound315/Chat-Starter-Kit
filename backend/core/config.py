@@ -13,7 +13,7 @@ class Settings(BaseSettings):
   secret_key: str = "change-me-in-production"
 
   # LLM 프로바이더 선택
-  llm_provider: Literal["azure_openai", "openai", "anthropic", "ollama"] = "azure_openai"
+  llm_provider: Literal["azure_openai", "openai", "anthropic", "ollama", "gemini"] = "azure_openai"
 
   # Azure OpenAI
   azure_openai_api_key: str = ""
@@ -33,6 +33,10 @@ class Settings(BaseSettings):
   # Ollama
   ollama_base_url: str = "http://localhost:11434"
   ollama_model: str = "llama3.2"
+
+  # Gemini
+  gemini_api_key: str = ""
+  gemini_model: str = "gemini-2.0-flash"
 
   # FastAPI
   api_host: str = "0.0.0.0"

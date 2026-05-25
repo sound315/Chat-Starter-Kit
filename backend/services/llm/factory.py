@@ -25,4 +25,8 @@ class LLMServiceFactory:
       from backend.services.llm.ollama_service import OllamaService
       return OllamaService(settings)
 
+    if provider == "gemini":
+      from backend.services.llm.gemini_service import GeminiService
+      return GeminiService(settings)
+
     raise ValueError(f"지원하지 않는 LLM 프로바이더: {provider}")

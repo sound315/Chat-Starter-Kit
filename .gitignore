@@ -11,4 +11,7 @@ venv/
 .DS_Store
 .claude/*
 !.claude/commands/
+!.claude/agents/
+!.claude/agent-memory/
+!.claude/settings.json
 poetry.lock
